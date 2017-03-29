@@ -62,7 +62,7 @@ def fetch_bug_summary(bug_num):
 
 def fetch_bug_numbers_by_package(pkg_name):
     """Fetch non-archived bugs"""
-    return debianbts.get_bugs('package', pkg_name, 'archive', 'false')
+    return debianbts.get_bugs('package', pkg_name)
 
 
 def extract_msg_id(header):
